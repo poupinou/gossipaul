@@ -1,0 +1,8 @@
+<% @gossip.each do |gossip| %>
+	<h5><%= gossip.content %></h5>
+	<p><%= gossip.anonymous_author %></p>
+	<a href="<%=gossip_path(gossip.id) %>">voir la suite</a>
+	<a href="<%= edit_gossip_path(gossip.id) %>">éditer</a>
+	<% end %>
+
+	<p> <a href="<%= new_gossip_path %>">créer gossip</a></p>
