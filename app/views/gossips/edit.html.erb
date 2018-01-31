@@ -5,4 +5,5 @@
  
     <%= goss.text_field :anonymous_author %>
   <button type="submit">Modifier le gossip</button>
+  <%= link_to 'Clique pour détruire', @gossip, method: :delete %>
 <% end %>
